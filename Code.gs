@@ -53,7 +53,7 @@ function doPost(e){
     var id = contents.callback_query.from.id;
     var data = contents.callback_query.data;
     
-    if(id == /*User ID !*/){
+    if(id == "<userid> !"){
       
       if(data == "others"){
         var keyBoard = {
@@ -121,7 +121,7 @@ function doPost(e){
       var id = contents.message.from.id;
       var text = contents.message.text;
       
-      if(id == /*User ID !*/){
+      if(id == "<userid> !"){
         
         //handle /start text
         if(text == "/start"){
